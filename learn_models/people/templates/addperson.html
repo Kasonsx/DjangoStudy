@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>添加人员</title>
+</head>
+<body>
+<form action="{% url 'person' name age %}" method="post">
+	Name:<input type="text" name="name">
+	<br/>
+	Age:<input type="num" name="age">
+	<br/>
+	<input type="submit" name="Submit">
+</form>
+</body>
+</html>

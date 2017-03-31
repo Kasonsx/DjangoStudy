@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Django Study</title>
+</head>
+<body>
+
+<a href="{% url 'add2' 4 5 %}">计算 4+5</a>
+<br>
+{{ string }}
+<br>
+{% for i in List %}
+{{ i }}
+{% endfor %}
+<br>
+{% for k,v in Dict.items %}
+{{ k }}:{{ v }}
+{% endfor %}
+</body>
+</html>

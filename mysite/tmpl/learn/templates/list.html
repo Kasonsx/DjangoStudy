@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>this is a list</title>
+</head>
+<body>
+there is a list<br/>
+获取列表：<br/>
+{% for i in tflist %}
+{{ i }}<br/>
+{% endfor %}
+获取字典:<br/>
+站点：{{ tfdict.site }}
+内容：{{ tfdict.content }}
+或者：<br/>
+{% for k,v in tfdict.items %}
+    {{ k }}:{{ v }}<br/>
+{% endfor %}
+输出100数字列表，去除最后的逗号<br/>
+{% for n in numlist %}
+    {{ n }}{% if not forloop.last %},{% endif %}
+{% endfor %}
+{{ request.user }}
+{{ request.path }}
+{{ request.GET.urlencode }}
+</body>
+</html>

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<!-- 网站模版示例，nav.html导航，bottom.html底部，tongji.html访问统计代码-->
+<html>
+<head>
+	<title>{% block title %}默认标题{% endblock %} - from django</title>
+</head>
+<body>
+{% include 'nav.html' %}
+{% block content %}
+<div>这里是默认内容，所有继承自这个模版的，如果不覆盖就显示这里的默认内容。</div>
+{% endblock %}
+
+{% include 'bottom.html' %}
+{% include 'tongji.html' %}
+</body>
+</html>
